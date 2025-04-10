@@ -1,6 +1,6 @@
 ---
 title: "Sample Post with Rich Metadata"
-date: 2025-04-11
+date: 2025-03-11
 author: crankbird
 tags: [example, test, rich-content]
 categories: [Tech, Tutorials]
