@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <script>
+        // Theme toggle script
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="blog-title-container">
+            <h1 class="blog-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        </div>
+        <nav>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+    </header>
+    <main>
+        <article class="post-card">
+            <header>
+                <h1 class="post-title">{{ page.title }}</h1>
+                <p class="post-meta">
+                    By {{ page.author }} on {{ page.date | date: "%B %d, %Y" }}
+                    {% if page.tags %}
+                    | Tags: {{ page.tags | array_to_sentence_string }}
+                    {% endif %}
+                </p>
+            </header>
+            <section class="post-content">
+                {{ content }}
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+    </footer>
+</body>
+
+</html>
