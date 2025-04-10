@@ -271,3 +271,80 @@ button#theme-toggle {
     font-size: var(--font-size-small);
     cursor: pointer;
 }
+
+/* Post Container */
+.post-card {
+    margin-bottom: var(--spacing-unit);
+    /* Use spacing unit for consistent gaps */
+    padding: var(--spacing-unit);
+    /* Consistent padding */
+    border-radius: 8px;
+    /* Material Design-like rounded corners */
+    background-color: var(--bg);
+    /* Background color from theme */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.post-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Lift effect on hover */
+    transform: translateY(-4px);
+}
+
+/* Post Title */
+.post-title {
+    font-size: calc(var(--font-size-base) * 1.5);
+    /* Scalable title size */
+    font-weight: bold;
+    margin-bottom: var(--spacing-unit);
+    /* Consistent spacing */
+    color: var(--link);
+}
+
+.post-title a {
+    text-decoration: none;
+    /* No underline */
+    color: inherit;
+    /* Inherit the title color */
+    transition: color 0.2s ease-in-out;
+}
+
+.post-title a:hover {
+    color: var(--link-hover);
+    /* Change color on hover */
+}
+
+/* Post Metadata */
+.post-meta {
+    font-size: calc(var(--font-size-base) * 0.875);
+    /* Slightly smaller */
+    font-style: italic;
+    color: var(--text-light);
+    /* Use a lighter text color */
+    margin-bottom: calc(var(--spacing-unit) * 0.5);
+    /* Smaller gap */
+}
+
+/* Post Content */
+.post-content {
+    font-size: var(--font-size-base);
+    /* Base font size */
+    line-height: 1.75;
+    /* Better readability */
+    color: var(--text);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .post-card {
+        padding: calc(var(--spacing-unit) * 0.5);
+        /* Smaller padding on mobile */
+    }
+
+    .post-title {
+        font-size: var(--font-size-base);
+        /* Reduce title size for smaller screens */
+    }
+}
