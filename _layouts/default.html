@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
@@ -22,8 +21,9 @@
     {{ content }}
   </main>
   <footer>
-    <p>© crankbird — <a href="https://github.com/crankbird/artisnal-intelligence">GitHub</a></p>
+    <p>© {{ site.author }} — <a href="{{ site.github_url }}">GitHub</a></p>
   </footer>
+  <!-- Move the script to the end of the body -->
   <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 </body>
 
