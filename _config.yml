@@ -1,8 +1,8 @@
 title: Artisanal Intelligence
-description: A principled blog by crankbird
+description: A blog about tech and other trends by crankbird
 author: crankbird
-baseurl: ""
-url: "https://artisnal-intelligence.com"
+baseurl: "" # Leave blank for portability
+url: "" # Leave blank for clean dev/prod switching
 theme: minima
 permalink: /posts/:title/
 markdown: kramdown
