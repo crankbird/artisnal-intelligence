@@ -251,9 +251,9 @@ footer {
     /* Add extra spacing below the title */
     padding: 8px;
     /* Add padding inside the title background */
-    background-color: #8f8caf;
+    background-color: ##6200ea;
     /* Decorative background */
-    border-bottom: 2px solid #8f8caf;
+    border-bottom: 2px solid ##6200ea;
     /* Optional: Add a divider */
 }
 
