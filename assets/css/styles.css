@@ -161,3 +161,43 @@ img {
     font-style: italic;
     margin-bottom: 16px;
 }
+
+/* Header Styles */
+header {
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Match the main content width */
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    /* Adjust alignment */
+    align-items: center;
+    /* Vertically center items */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 16px;
+    /* Add spacing between items */
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    padding: 8px 12px;
+    /* Smaller padding for better fit */
+    font-size: var(--font-size-small);
+    border: 1px solid var(--link);
+    /* Optional: Add border for better visibility */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    /* Transparent background for light/dark mode */
+    color: var(--link);
+}
+
+#theme-toggle:hover {
+    background-color: var(--link-hover);
+    color: #fff;
+    /* Invert text color for contrast */
+}
