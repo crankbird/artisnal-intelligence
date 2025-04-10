@@ -1,40 +1,44 @@
-:root {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --link: #0033cc;
-  --link-hover: #0055ff;
-  --accent: #0066ff;
+/* Post-Specific Styles */
+
+/*
+ * Purpose:
+ * - This file contains styles specific to blog posts.
+ * - It is used to define the appearance of post titles, content, metadata, and images.
+ *
+ * Key Features:
+ * - Styles for post-specific elements like `.post-title`, `.post-content`, etc.
+ * - Intended for use on post-related pages only.
+ * - Does not include site-wide or reusable styles.
+ *
+ * Best Practice:
+ * - Keep this file focused on post-specific styles.
+ * - Avoid duplicating global styles from `styles.css` here.
+ * - Use modular and maintainable styles that are easy to update.
+ */
+
+/* Example: Styling for Post Content */
+.post-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121212;
-    --text: #e0e0e0;
-    --link: #66aaff;
-    --link-hover: #aaccff;
-    --accent: #3399ff;
-  }
-}
-
-body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: system-ui, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 1.5rem;
-}
-
-a {
-  color: var(--link);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--link-hover);
-  text-decoration: underline;
-}
-
-nav {
+.post-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
   margin-bottom: 2rem;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
 }

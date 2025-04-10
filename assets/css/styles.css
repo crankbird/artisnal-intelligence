@@ -1,0 +1,75 @@
+/* Global Styles for the Entire Site */
+
+/*
+ * Purpose:
+ * - This file contains site-wide styles that are applied globally.
+ * - It includes theme variables, basic resets, and responsive adjustments.
+ * - Handles dark mode using the `@media (prefers-color-scheme: dark)` query.
+ *
+ * Key Features:
+ * - Defines root variables for colors.
+ * - Sets global styles for body, links, and navigation.
+ * - Includes media queries for responsive design.
+ *
+ * Best Practice:
+ * - Use this file for global styles only.
+ * - Avoid adding page-specific or component-specific styles here.
+ * - Keep styles modular and ensure reusability across the site.
+ */
+
+/* Root Variables */
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --link: #0033cc;
+    --link-hover: #0055ff;
+    --accent: #0066ff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #121212;
+        --text: #e0e0e0;
+        --link: #66aaff;
+        --link-hover: #aaccff;
+        --accent: #3399ff;
+    }
+}
+
+/* Basic Reset */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+/* Links */
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        text-align: center;
+    }
+}
