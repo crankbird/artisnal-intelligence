@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to Artisanal Intelligence
+# Welcome to Artisanal Intelligence 2.0
 
 This is a space for human-first, AI-aware blogging — where provenance, clarity, and autonomy matter.
 
