@@ -1,0 +1,22 @@
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+:root {
+  --bg: #fff;
+  --text: #000;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --text: #eee;
+  }
+}

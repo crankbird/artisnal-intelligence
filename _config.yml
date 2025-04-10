@@ -1,0 +1,9 @@
+title: Artisanal Intelligence
+description: A principled blog by crankbird
+author: crankbird
+baseurl: ""
+url: "https://artisnal-intelligence.com"
+theme: minima
+permalink: /posts/:title/
+markdown: kramdown
+plugins: []
