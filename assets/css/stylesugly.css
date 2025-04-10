@@ -1,0 +1,183 @@
+/* Root Variables */
+:root {
+    /* Theme Variables for Light Mode */
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --link: #0033cc;
+    --link-hover: #0055ff;
+
+    /* Global Variables */
+    --color-primary: #6200ea;
+    /* Material Purple */
+    --color-primary-variant: #3700b3;
+    --color-secondary: #03dac6;
+    /* Material Teal */
+
+    --color-background: #ffffff;
+    --color-surface: #f5f5f5;
+    --color-error: #b00020;
+
+    --color-on-primary: #ffffff;
+    --color-on-secondary: #000000;
+    --color-on-background: #000000;
+    --color-on-surface: #000000;
+    --color-on-error: #ffffff;
+
+    --spacing-unit: 8px;
+
+    --font-family: 'Roboto', 'Arial', sans-serif;
+    /* Material Design Font */
+    --font-size-base: 16px;
+    /* Base font size */
+    --font-size-small: calc(var(--font-size-base) * 0.875);
+    --font-size-large: calc(var(--font-size-base) * 1.25);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --link: #66aaff;
+    --link-hover: #aaccff;
+
+    --color-background: #121212;
+    --color-surface: #1e1e1e;
+    --color-on-background: #ffffff;
+    --color-on-surface: #ffffff;
+}
+
+/* Reset prefers-color-scheme to avoid conflicts */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #ffffff;
+        --color-on-background: #000000;
+    }
+}
+
+/* Global Reset */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    margin: 0;
+    /* Remove default margins */
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    margin-top: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+    font-size: var(--font-size-large);
+}
+
+p {
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+    font-size: var(--font-size-base);
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: none;
+    border-radius: 4px;
+    padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 2);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    min-height: 44px;
+    /* Recommended touch size */
+    min-width: 44px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: var(--color-primary-variant);
+}
+
+/* Card Component */
+.card {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    font-size: var(--font-size-base);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 600px) {
+    body {
+        font-size: calc(var(--font-size-base) * 0.9);
+    }
+
+    h1 {
+        font-size: calc(var(--font-size-large) * 0.9);
+    }
+}
+
+/* Retina-Specific Adjustments */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi) {
+    button {
+        font-size: var(--font-size-large);
+    }
+}
+
+/* Post-Specific Styles */
+.post-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.post-content {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-on-background);
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.post-meta {
+    font-size: 0.875rem;
+    color: var(--color-on-surface);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    font-style: italic;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add a small left-hand margin for content */
+main {
+    margin-left: calc(env(safe-area-inset-left) + 16px);
+    margin-right: calc(env(safe-area-inset-right) + 16px);
+    padding: 16px;
+}
