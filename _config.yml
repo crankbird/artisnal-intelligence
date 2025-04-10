@@ -19,14 +19,13 @@ plugins:
   - jekyll-redirect-from
   - jekyll-gist
 
-# Syntax highlighting (using Highlight.js or similar)
+# Syntax highlighting (using Rouge)
 markdown: kramdown
 highlighter: rouge # Rouge is Jekyll's default highlighter
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     line_numbers: true # Add line numbers to code blocks
-    span: line # Optional, adds spans around line numbers
 
 # Additional metadata
 author: Crankbird

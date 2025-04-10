@@ -28,8 +28,25 @@
   <footer>
     <p>© {{ site.author }} — <a href="{{ site.github_url }}">GitHub</a></p>
   </footer>
-  <!-- Move the script to the end of the body -->
-  <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+
+  <!-- Theme toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+
+      // Load saved theme from localStorage
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    });
+  </script>
 </body>
 
 </html>

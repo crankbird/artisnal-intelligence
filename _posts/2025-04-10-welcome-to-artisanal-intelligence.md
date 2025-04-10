@@ -57,4 +57,4 @@ Here's what that might look like in practice:
 - modular_components: true
 - human_feedback: required
 - corporate_buzzwords: deprecated
-
+```
