@@ -201,3 +201,27 @@ nav {
     color: #fff;
     /* Invert text color for contrast */
 }
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    /* Center the text */
+    padding: 16px;
+    /* Add some spacing around the footer */
+    background-color: var(--color-surface);
+    /* Optional: Set a background color */
+    color: var(--color-on-surface);
+    /* Optional: Ensure text is readable */
+}
+
+/* Blog Title Styles */
+.blog-title {
+    display: block;
+    /* Force the title to appear on its own line */
+    font-size: var(--font-size-large);
+    /* Larger font size for emphasis */
+    margin-bottom: 8px;
+    /* Add spacing below the title */
+    text-align: center;
+    /* Optional: Center the title */
+}
