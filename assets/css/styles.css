@@ -215,13 +215,36 @@ footer {
 }
 
 /* Blog Title Styles */
-.blog-title {
-    display: block;
-    /* Force the title to appear on its own line */
-    font-size: var(--font-size-large);
-    /* Larger font size for emphasis */
-    margin-bottom: 8px;
-    /* Add spacing below the title */
+/* This section styles the blog title to be centered and visually distinct */
+
+.blog-title-container {
     text-align: center;
-    /* Optional: Center the title */
+    /* Center the blog title */
+    margin-bottom: 16px;
+    /* Add space below the title */
+    padding: 8px;
+    /* Optional padding around the title */
+    background-color: #f9f9f9;
+    /* Optional: Decorative background */
+    border-bottom: 2px solid #ccc;
+    /* Optional: Divider for visual separation */
+}
+
+.blog-title {
+    margin: 0;
+    /* Remove default margin to prevent extra spacing */
+    font-size: 2em;
+    /* Make the title prominent */
+}
+
+.blog-title a {
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: var(--link);
+    /* Use your theme's link color */
+}
+
+.blog-title a:hover {
+    color: var(--link-hover);
+    /* Change color on hover */
 }
