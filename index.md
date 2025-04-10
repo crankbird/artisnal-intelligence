@@ -3,10 +3,6 @@ layout: default
 title: Home
 ---
 
-<nav>
-  <button id="theme-toggle">Toggle Theme</button>
-</nav>
-
 # Welcome to Artisanal Intelligence
 
 This is a space for human-first, AI-aware blogging — where provenance, clarity, and autonomy matter.
