@@ -27,10 +27,6 @@
 
     --font-family: 'Roboto', 'Arial', sans-serif;
     /* Material Design Font */
-    --font-size-base: 16px;
-    /* Base font size */
-    --font-size-small: calc(var(--font-size-base) * 0.875);
-    --font-size-large: calc(var(--font-size-base) * 1.25);
 }
 
 /* Dark Theme Variables */
@@ -59,7 +55,6 @@ body {
     background-color: var(--bg);
     color: var(--text);
     font-family: var(--font-family);
-    font-size: var(--font-size-base);
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -75,12 +70,10 @@ h6 {
     font-family: var(--font-family);
     margin-top: calc(var(--spacing-unit) * 2);
     margin-bottom: calc(var(--spacing-unit) * 1.5);
-    font-size: var(--font-size-large);
 }
 
 p {
     margin-bottom: calc(var(--spacing-unit) * 1.5);
-    font-size: var(--font-size-base);
 }
 
 a {
@@ -101,10 +94,6 @@ button {
     border-radius: 4px;
     padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 2);
     font-family: var(--font-family);
-    font-size: var(--font-size-small);
-    min-height: 44px;
-    /* Recommended touch size */
-    min-width: 44px;
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -121,25 +110,16 @@ button:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: calc(var(--spacing-unit) * 2);
     margin-bottom: calc(var(--spacing-unit) * 2);
-    font-size: var(--font-size-base);
 }
 
 /* Responsive Breakpoints */
 @media (max-width: 600px) {
     body {
-        font-size: calc(var(--font-size-base) * 0.9);
+        font-size: 14px;
     }
 
     h1 {
-        font-size: calc(var(--font-size-large) * 0.9);
-    }
-}
-
-/* Retina-Specific Adjustments */
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi) {
-    button {
-        font-size: var(--font-size-large);
+        font-size: 24px;
     }
 }
 
