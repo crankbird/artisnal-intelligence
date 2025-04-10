@@ -1,75 +1,124 @@
-/* Global Styles for the Entire Site */
+/* Global Styles Based on Material Design */
 
 /*
  * Purpose:
- * - This file contains site-wide styles that are applied globally.
- * - It includes theme variables, basic resets, and responsive adjustments.
- * - Handles dark mode using the `@media (prefers-color-scheme: dark)` query.
+ * - This file contains global styles inspired by Material Design principles.
+ * - It includes a modular setup for colors, typography, and spacing.
+ * - Ensures responsiveness and accessibility.
  *
  * Key Features:
- * - Defines root variables for colors.
- * - Sets global styles for body, links, and navigation.
- * - Includes media queries for responsive design.
- *
- * Best Practice:
- * - Use this file for global styles only.
- * - Avoid adding page-specific or component-specific styles here.
- * - Keep styles modular and ensure reusability across the site.
+ * - Uses Material Design color palettes and typography.
+ * - Implements consistent spacing and layout rules.
+ * - Provides a baseline for enhancements moving forward.
  */
 
-/* Root Variables */
+/* Color Variables */
 :root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --link: #0033cc;
-    --link-hover: #0055ff;
-    --accent: #0066ff;
+    /* Primary Colors */
+    --color-primary: #6200ea;
+    /* Material Purple */
+    --color-primary-variant: #3700b3;
+    --color-secondary: #03dac6;
+    /* Material Teal */
+
+    /* Background and Surface */
+    --color-background: #ffffff;
+    --color-surface: #f5f5f5;
+    --color-error: #b00020;
+
+    /* Text Colors */
+    --color-on-primary: #ffffff;
+    --color-on-secondary: #000000;
+    --color-on-background: #000000;
+    --color-on-surface: #000000;
+    --color-on-error: #ffffff;
+
+    /* Spacing */
+    --spacing-unit: 8px;
+
+    /* Typography */
+    --font-family: 'Roboto', 'Arial', sans-serif;
+    /* Material Design Font */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #121212;
-        --text: #e0e0e0;
-        --link: #66aaff;
-        --link-hover: #aaccff;
-        --accent: #3399ff;
+        --color-background: #121212;
+        --color-surface: #1e1e1e;
+        --color-on-background: #ffffff;
+        --color-on-surface: #ffffff;
     }
 }
 
-/* Basic Reset */
+/* Global Reset */
 body {
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font-family: var(--font-family);
+    line-height: 1.5;
     margin: 0;
-    padding: 1.5rem;
+    padding: 0;
 }
 
-/* Links */
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    margin-top: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+p {
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
 a {
-    color: var(--link);
+    color: var(--color-primary);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--link-hover);
+    color: var(--color-primary-variant);
     text-decoration: underline;
 }
 
-/* Navigation */
-nav {
-    margin-bottom: 2rem;
+/* Buttons */
+button {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: none;
+    border-radius: 4px;
+    padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 2);
+    font-family: var(--font-family);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+button:hover {
+    background-color: var(--color-primary-variant);
+}
+
+/* Card Component */
+.card {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
     }
 
-    ul li {
-        text-align: center;
+    h1 {
+        font-size: 24px;
     }
 }
