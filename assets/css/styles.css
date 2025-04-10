@@ -162,18 +162,7 @@ img {
     margin-bottom: 16px;
 }
 
-/* Header Styles */
-header {
-    margin: 0 auto;
-    max-width: 1200px;
-    /* Match the main content width */
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    /* Adjust alignment */
-    align-items: center;
-    /* Vertically center items */
-}
+
 
 /* Navigation Styles */
 nav {
@@ -202,6 +191,20 @@ nav {
     /* Invert text color for contrast */
 }
 
+/* Header Styles */
+header {
+    display: flex;
+    /* Enable Flexbox */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    gap: 16px;
+    /* Add spacing between items */
+    padding: 16px;
+    /* Optional: Add padding around the header */
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -216,19 +219,6 @@ footer {
 
 /* Blog Title Styles */
 /* This section styles the blog title to be centered and visually distinct */
-
-.blog-title-container {
-    text-align: center;
-    /* Center the blog title */
-    margin-bottom: 16px;
-    /* Add space below the title */
-    padding: 8px;
-    /* Optional padding around the title */
-    background-color: #f9f9f9;
-    /* Optional: Decorative background */
-    border-bottom: 2px solid #ccc;
-    /* Optional: Divider for visual separation */
-}
 
 .blog-title {
     margin: 0;
@@ -247,4 +237,37 @@ footer {
 .blog-title a:hover {
     color: var(--link-hover);
     /* Change color on hover */
+}
+
+
+
+/* Blog Title Container */
+.blog-title-container {
+    width: 100%;
+    /* Ensure it spans the full width */
+    text-align: center;
+    /* Center the blog title text */
+    margin-bottom: 8px;
+    /* Add extra spacing below the title */
+    padding: 8px;
+    /* Add padding inside the title background */
+    background-color: #f9f9f9;
+    /* Decorative background */
+    border-bottom: 2px solid #ccc;
+    /* Optional: Add a divider */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    /* Keep nav links in a horizontal row */
+    gap: 16px;
+    /* Add spacing between nav links */
+}
+
+/* Theme Toggle Button */
+button#theme-toggle {
+    padding: 8px 12px;
+    font-size: var(--font-size-small);
+    cursor: pointer;
 }
