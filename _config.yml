@@ -1,9 +1,41 @@
-title: Artisanal Intelligence
-description: A blog about tech and other trends by crankbird
-author: crankbird
-baseurl: "" # Leave blank for portability
-url: "" # Leave blank for clean dev/prod switching
-theme: minima
-permalink: /posts/:title/
+title: Artisanal Intelligence Blog
+description: A blog about artisanal intelligence
+baseurl: "" # the subpath of your site, e.g., /blog
+url: "https://crankbird.github.io" # the base hostname & protocol for your site
+
+# Permalink structure
+permalink_style: pretty
+
+# Pagination settings
+paginate: 5
+paginate_path: /page:num/
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-gist
+
+# Syntax highlighting (using Highlight.js or similar)
 markdown: kramdown
-plugins: []
+highlighter: rouge # Rouge is Jekyll's default highlighter
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: true # Add line numbers to code blocks
+    span: line # Optional, adds spans around line numbers
+
+# Additional metadata
+author: Crankbird
+timezone: Australia/Sydney
+
+# Excluded files and folders
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile*
+  - README.md
+  - _site
