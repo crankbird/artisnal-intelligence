@@ -348,3 +348,24 @@ button#theme-toggle {
         /* Reduce title size for smaller screens */
     }
 }
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+#search-results li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#search-results li a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+#search-results li a:hover {
+    text-decoration: underline;
+}
