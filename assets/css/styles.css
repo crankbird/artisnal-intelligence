@@ -13,11 +13,9 @@
     --dark-link-hover: #aaccff;
 
     /* Global Variables */
-    --color-primary: #6200ea;
-    /* Material Purple */
+    --color-primary: #6200ea; /* Material Purple */
     --color-primary-variant: #3700b3;
-    --color-secondary: #03dac6;
-    /* Material Teal */
+    --color-secondary: #03dac6; /* Material Teal */
     --spacing-unit: 8px;
 
     --font-family: 'Roboto', 'Arial', sans-serif;
@@ -28,17 +26,17 @@
 
 /* Theme Modes */
 [data-theme="light"] {
-    --bg: var(--bg);
-    --text: var(--text);
-    --link: var(--link);
-    --link-hover: var(--link-hover);
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --link: #0033cc;
+    --link-hover: #0055ff;
 }
 
 [data-theme="dark"] {
-    --bg: var(--dark-bg);
-    --text: var(--dark-text);
-    --link: var(--dark-link);
-    --link-hover: var(--dark-link-hover);
+    --bg: #121212;
+    --text: #e0e0e0;
+    --link: #66aaff;
+    --link-hover: #aaccff;
 }
 
 /* Reset */
@@ -50,22 +48,16 @@ body {
     line-height: 1.5;
     background-color: var(--bg);
     color: var(--text);
-}
-
-/* Safe Area Adjustments for Notch Devices */
-body {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); /* Safe Area Adjustments */
 }
 
 /* Main Content */
 main {
     margin: 0 auto;
     padding: 16px;
-    max-width: 1200px;
-    /* Limit content width on large screens */
+    max-width: 1200px; /* Limit content width on large screens */
 }
 
-/* Responsive Adjustments */
 @media (max-width: 600px) {
     main {
         padding: 8px;
@@ -109,14 +101,12 @@ a:hover {
 button {
     background-color: var(--color-primary);
     color: #ffffff;
-    /* Ensure good contrast */
     border: none;
     border-radius: 4px;
     padding: 12px 24px;
     font-size: var(--font-size-small);
     cursor: pointer;
     min-height: 44px;
-    /* Minimum touch target size */
     min-width: 44px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -134,205 +124,67 @@ img {
 }
 
 /* Cards */
-.card {
-    background-color: var(--bg);
-    color: var(--text);
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    margin-bottom: 16px;
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
-/* Post-Specific Styles */
-.post-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-.post-content {
-    font-size: 1rem;
-    line-height: 1.75;
-    margin-bottom: 24px;
-}
-
-.post-meta {
-    font-size: 0.875rem;
-    font-style: italic;
-    margin-bottom: 16px;
-}
-
-
-
-/* Navigation Styles */
-nav {
-    display: flex;
-    gap: 16px;
-    /* Add spacing between items */
-}
-
-/* Theme Toggle Button */
-#theme-toggle {
-    padding: 8px 12px;
-    /* Smaller padding for better fit */
-    font-size: var(--font-size-small);
-    border: 1px solid var(--link);
-    /* Optional: Add border for better visibility */
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: transparent;
-    /* Transparent background for light/dark mode */
-    color: var(--link);
-}
-
-#theme-toggle:hover {
-    background-color: var(--link-hover);
-    color: #627a89;
-    /* Invert text color for contrast */
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    /* Enable Flexbox */
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center items horizontally */
-    gap: 16px;
-    /* Add spacing between items */
-    padding: 16px;
-    /* Optional: Add padding around the header */
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    /* Center the text */
-    padding: 16px;
-    /* Add some spacing around the footer */
-    background-color: var(--color-surface);
-    /* Optional: Set a background color */
-    color: var(--color-on-surface);
-    /* Optional: Ensure text is readable */
-}
-
-/* Blog Title Styles */
-/* This section styles the blog title to be centered and visually distinct */
-
-.blog-title {
-    margin: 0;
-    /* Remove default margin to prevent extra spacing */
-    font-size: 2em;
-    /* Make the title prominent */
-}
-
-.blog-title a {
-    text-decoration: none;
-    /* Remove underline from the link */
-    color: var(--link);
-    /* Use your theme's link color */
-}
-
-.blog-title a:hover {
-    color: var(--link-hover);
-    /* Change color on hover */
-}
-
-
-
-/* Blog Title Container */
-.blog-title-container {
-    width: 100%;
-    /* Ensure it spans the full width */
-    text-align: center;
-    /* Center the blog title text */
-    margin-bottom: 8px;
-    /* Add extra spacing below the title */
-    padding: 8px;
-    /* Add padding inside the title background */
-    background-color: #6200ea;
-    /* Decorative background */
-    border-bottom: 2px solid #6200ea;
-    /* Optional: Add a divider */
-}
-
-/* Navigation Styles */
-nav {
-    display: flex;
-    /* Keep nav links in a horizontal row */
-    gap: 16px;
-    /* Add spacing between nav links */
-}
-
-/* Theme Toggle Button */
-button#theme-toggle {
-    padding: 8px 12px;
-    font-size: var(--font-size-small);
-    cursor: pointer;
-}
-
-/* Post Container */
 .post-card {
     margin-bottom: var(--spacing-unit);
-    /* Use spacing unit for consistent gaps */
     padding: var(--spacing-unit);
-    /* Consistent padding */
     border-radius: 8px;
-    /* Material Design-like rounded corners */
     background-color: var(--bg);
-    /* Background color from theme */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .post-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hover lift effect */
     transform: translateY(-4px);
 }
 
+.post-card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-card-content {
+    padding: 1rem;
+}
+
 /* Post Title */
-.post-title {
-    font-size: calc(var(--font-size-base) * 1.5);
-    /* Scalable title size */
-    font-weight: bold;
-    margin-bottom: var(--spacing-unit);
-    /* Consistent spacing */
+.post-card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
     color: var(--link);
 }
 
-.post-title a {
+.post-card a {
     text-decoration: none;
-    /* No underline */
     color: inherit;
-    /* Inherit the title color */
     transition: color 0.2s ease-in-out;
 }
 
-.post-title a:hover {
+.post-card a:hover {
+    text-decoration: underline;
     color: var(--link-hover);
-    /* Change color on hover */
 }
 
 /* Post Metadata */
 .post-meta {
     font-size: calc(var(--font-size-base) * 0.875);
-    /* Slightly smaller */
     font-style: italic;
     color: var(--text-light);
-    /* Use a lighter text color */
     margin-bottom: calc(var(--spacing-unit) * 0.5);
-    /* Smaller gap */
 }
 
 /* Post Content */
 .post-content {
     font-size: var(--font-size-base);
-    /* Base font size */
     line-height: 1.75;
-    /* Better readability */
     color: var(--text);
 }
 
@@ -340,86 +192,42 @@ button#theme-toggle {
 @media (max-width: 600px) {
     .post-card {
         padding: calc(var(--spacing-unit) * 0.5);
-        /* Smaller padding on mobile */
     }
 
     .post-title {
         font-size: var(--font-size-base);
-        /* Reduce title size for smaller screens */
     }
 }
 
-#search-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 1rem;
+/* Theme Toggle Button */
+#theme-toggle {
+    padding: 8px 12px;
+    font-size: var(--font-size-small);
+    border: 1px solid var(--link);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--link);
 }
 
-#search-results li {
-    list-style: none;
-    margin: 10px 0;
+#theme-toggle:hover {
+    background-color: var(--link-hover);
+    color: #ffffff;
 }
 
-#search-results li a {
-    text-decoration: none;
-    color: #007acc;
-}
-
-#search-results li a:hover {
-    text-decoration: underline;
-}
-
-/* Card Layout Styles */
-.post-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  
-  .post-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: #fff;
+/* Header Styles */
+header {
     display: flex;
     flex-direction: column;
-  }
-  
-  .post-card-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .post-card-content {
-    padding: 1rem;
-  }
-  
-  .post-card h2 {
-    margin: 0 0 0.5rem;
-    font-size: 1.25rem;
-  }
-  
-  .post-card a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .post-card a:hover {
-    text-decoration: underline;
-  }
-  
-  .post-meta {
-    color: #999;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .post-excerpt {
-    font-size: 1rem;
-    color: #555;
-    margin: 0;
-  }
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
