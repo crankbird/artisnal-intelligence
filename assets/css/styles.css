@@ -1,18 +1,5 @@
-/* Root Variables */
+/* Global Defaults (Shared Variables) */
 :root {
-    /* Light Theme Variables */
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --link: #0033cc;
-    --link-hover: #0055ff;
-
-    /* Dark Theme Variables */
-    --dark-bg: #121212;
-    --dark-text: #e0e0e0;
-    --dark-link: #66aaff;
-    --dark-link-hover: #aaccff;
-
-    /* Global Variables */
     --color-primary: #6200ea; /* Material Purple */
     --color-primary-variant: #3700b3;
     --color-secondary: #03dac6; /* Material Teal */
@@ -24,19 +11,22 @@
     --font-size-large: calc(var(--font-size-base) * 1.25);
 }
 
-/* Theme Modes */
+/* Light Theme Variables */
 [data-theme="light"] {
     --bg: #ffffff;
     --text: #1a1a1a;
     --link: #0033cc;
     --link-hover: #0055ff;
+    --card-shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow for light theme */
 }
 
+/* Dark Theme Variables */
 [data-theme="dark"] {
     --bg: #121212;
     --text: #e0e0e0;
     --link: #66aaff;
     --link-hover: #aaccff;
+    --card-shadow: rgba(255, 255, 255, 0.1); /* Lighter shadow for dark theme */
 }
 
 /* Reset */
@@ -136,12 +126,12 @@ img {
     padding: var(--spacing-unit);
     border-radius: 8px;
     background-color: var(--bg);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--card-shadow);
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .post-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hover lift effect */
+    box-shadow: 0 4px 8px var(--card-shadow); /* Hover lift effect */
     transform: translateY(-4px);
 }
 
