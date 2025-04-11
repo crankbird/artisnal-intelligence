@@ -1,10 +1,5 @@
 ---
 layout: default
-title: Home
----
-
----
-layout: default
 title: "Home"
 ---
 
@@ -12,13 +7,11 @@ title: "Home"
 
 {{ site.description }}
 
-<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-
 <section class="post-list">
   {% for post in site.posts %}
   <article class="post-card">
     <a href="{{ post.url | relative_url }}">
-      <div class="post-card-image" style="background-image: url('{{ post.image | relative_url }}');"></div>
+      <div class="post-card-image" style="background-image: url('{{ '/assets/images/' | append: post.image | relative_url }}');"></div>
     </a>
     <div class="post-card-content">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
