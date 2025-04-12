@@ -7,6 +7,7 @@ categories: [Tech, Tutorials]
 excerpt: "This is a sample post to test the enhanced layout with rich metadata and content."
 reading_time: "5 min read"
 image: /assets/images/sample.png
+layout: post
 ---
 
 # Sample Post with Rich Metadata
