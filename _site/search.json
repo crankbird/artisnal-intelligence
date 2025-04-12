@@ -1,0 +1,17 @@
+[
+  
+  {
+    "title": "Welcome to Artisanal Intelligence",
+    "url": "/2025/04/10/welcome-to-artisanal-intelligence.html",
+    "date": "April 10, 2025",
+    "content": "title: “Welcome to Artisanal Intelligence”date: 2025-04-10author: crankbirdlayout: post—Welcome to Artisanal Intelligence  A place where technology meets intentionality, and code meets craft.Modern artificial intelligence often feels like mass production — sprawling neural networks, industrial-scale data centers, and opaque algorithms trained on oceans of data. But what if intelligence could be artisanal?🧠 What Do We Mean by “Artisanal”?The term artisanal might evoke images of sourdough bread, handmade furniture, or carefully roasted coffee. But in the context of AI, it suggests something more subtle: a human-centered, intentional approach to building and understanding intelligence.Why “Artisanal” and Not “Artificial”?  Artisanal intelligence is curated. Instead of training models on everything, we might train them on something — something meaningful, contextual, or intentionally chosen.  It values transparency. Like watching a baker knead dough, we believe in models that you can understand and even tinker with.  It’s designed for collaboration. Not to replace people, but to augment them. To partner with them. To amplify judgment, not override it.🛠️ Tools, Not Gods  “The best tools don’t make decisions for you. They help you think better.”Many modern AI systems are black boxes. Artisanal Intelligence seeks the opposite: white boxes that support clarity. We believe that design matters. That a well-structured prompt is as important as the model that reads it. That interface is part of intelligence.Here’s what that might look like in practice:1234- handcrafted_models: true- modular_components: true- human_feedback: required- corporate_buzzwords: deprecated"
+  },
+  
+  {
+    "title": "Sample Post with Rich Metadata",
+    "url": "/tech/tutorials/2025/03/11/a-quick-test.html",
+    "date": "March 11, 2025",
+    "content": "Sample Post with Rich MetadataWelcome to another sample post on Artisanal Intelligence — this one is designed to stretch your blog layout and stress-test rich metadata rendering. If you’re seeing this, your Jekyll setup is alive and well. Let’s dive in.🧭 What This Post CoversThis is a fully featured sample post to help you test:  Rendering of headers and lists  Syntax highlighting in code blocks  Embedded tables and blockquotes  Images and inline metadata usage  Horizontal rules and callouts  Frontmatter parsing in layout🧠 Why This Matters  “A well-structured test post tells you more about your theme than ten broken layouts.”Most blog engines work fine for minimal content. But as your blog matures, you’ll want:  Good typography for longer reads  Semantic support for content like tutorials  A flexible layout that works for both casual and technical audiencesThis post helps you simulate that real-world complexity — without resorting to lorem ipsum.🔧 Sample Code SnippetHere’s a simple Python function using syntax highlighting:12345def greet(name):    print(f&quot;Hello, {name}. Welcome to Artisanal Intelligence.&quot;)if __name__ == &quot;__main__&quot;:    greet(&quot;crankbird&quot;)"
+  }
+  
+]

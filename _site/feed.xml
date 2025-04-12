@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-12T17:00:09+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Artisanal Intelligence Blog</title><subtitle>A blog about artisanal intelligence</subtitle><author><name>Crankbird</name></author><entry><title type="html">Welcome to Artisanal Intelligence</title><link href="http://localhost:4000/2025/04/10/welcome-to-artisanal-intelligence.html" rel="alternate" type="text/html" title="Welcome to Artisanal Intelligence" /><published>2025-04-10T00:00:00+10:00</published><updated>2025-04-10T00:00:00+10:00</updated><id>http://localhost:4000/2025/04/10/welcome-to-artisanal-intelligence</id><content type="html" xml:base="http://localhost:4000/2025/04/10/welcome-to-artisanal-intelligence.html"><![CDATA[<hr />
+
+<p>title: “Welcome to Artisanal Intelligence”
+date: 2025-04-10
+author: crankbird
+layout: post
+—</p>
+
+<h1 id="welcome-to-artisanal-intelligence">Welcome to <em>Artisanal Intelligence</em></h1>
+
+<blockquote>
+  <p>A place where technology meets intentionality, and code meets craft.</p>
+</blockquote>
+
+<p>Modern artificial intelligence often feels like mass production — sprawling neural networks, industrial-scale data centers, and opaque algorithms trained on oceans of data. But <em>what if intelligence could be artisanal</em>?</p>
+
+<h2 id="-what-do-we-mean-by-artisanal">🧠 What Do We Mean by “Artisanal”?</h2>
+
+<p>The term <em>artisanal</em> might evoke images of sourdough bread, handmade furniture, or carefully roasted coffee. But in the context of AI, it suggests something more subtle: <strong>a human-centered, intentional approach to building and understanding intelligence.</strong></p>
+
+<h3 id="why-artisanal-and-not-artificial">Why “Artisanal” and Not “Artificial”?</h3>
+
+<ul>
+  <li><strong>Artisanal intelligence is curated.</strong> Instead of training models on everything, we might train them on <em>something</em> — something meaningful, contextual, or intentionally chosen.</li>
+  <li><strong>It values transparency.</strong> Like watching a baker knead dough, we believe in models that you can understand and even <em>tinker with</em>.</li>
+  <li><strong>It’s designed for collaboration.</strong> Not to replace people, but to augment them. To partner with them. To amplify judgment, not override it.</li>
+</ul>
+
+<hr />
+
+<h2 id="️-tools-not-gods">🛠️ Tools, Not Gods</h2>
+
+<blockquote>
+  <p>“The best tools don’t make decisions for you. They help you think better.”</p>
+</blockquote>
+
+<p>Many modern AI systems are black boxes. Artisanal Intelligence seeks the opposite: <strong>white boxes that support clarity.</strong> We believe that design matters. That a well-structured prompt is as important as the model that reads it. That <em>interface is part of intelligence</em>.</p>
+
+<p>Here’s what that might look like in practice:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="pi">-</span> <span class="na">handcrafted_models</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="pi">-</span> <span class="na">modular_components</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="pi">-</span> <span class="na">human_feedback</span><span class="pi">:</span> <span class="s">required</span>
+<span class="pi">-</span> <span class="na">corporate_buzzwords</span><span class="pi">:</span> <span class="s">deprecated</span>
+</pre></td></tr></tbody></table></code></pre></div></div>]]></content><author><name>crankbird</name></author><category term="meta" /><category term="provenance" /><category term="ai" /><summary type="html"><![CDATA[Launching a blog grounded in transparency, clarity, and attribution.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/welcome.png" /><media:content medium="image" url="http://localhost:4000/assets/images/welcome.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Sample Post with Rich Metadata</title><link href="http://localhost:4000/tech/tutorials/2025/03/11/a-quick-test.html" rel="alternate" type="text/html" title="Sample Post with Rich Metadata" /><published>2025-03-11T00:00:00+11:00</published><updated>2025-03-11T00:00:00+11:00</updated><id>http://localhost:4000/tech/tutorials/2025/03/11/a-quick-test</id><content type="html" xml:base="http://localhost:4000/tech/tutorials/2025/03/11/a-quick-test.html"><![CDATA[<h1 id="sample-post-with-rich-metadata">Sample Post with Rich Metadata</h1>
+
+<p>Welcome to another <strong>sample post</strong> on <em>Artisanal Intelligence</em> — this one is designed to stretch your blog layout and stress-test rich metadata rendering. If you’re seeing this, your Jekyll setup is alive and well. Let’s dive in.</p>
+
+<hr />
+
+<h2 id="-what-this-post-covers">🧭 What This Post Covers</h2>
+
+<p>This is a <em>fully featured sample post</em> to help you test:</p>
+
+<ul>
+  <li>Rendering of headers and lists</li>
+  <li>Syntax highlighting in code blocks</li>
+  <li>Embedded tables and blockquotes</li>
+  <li>Images and inline metadata usage</li>
+  <li>Horizontal rules and callouts</li>
+  <li>Frontmatter parsing in layout</li>
+</ul>
+
+<hr />
+
+<h2 id="-why-this-matters">🧠 Why This Matters</h2>
+
+<blockquote>
+  <p>“A well-structured test post tells you more about your theme than ten broken layouts.”</p>
+</blockquote>
+
+<p>Most blog engines work fine for minimal content. But as your blog matures, you’ll want:</p>
+
+<ul>
+  <li>Good typography for longer reads</li>
+  <li>Semantic support for content like tutorials</li>
+  <li>A flexible layout that works for both casual and technical audiences</li>
+</ul>
+
+<p>This post helps you simulate that real-world complexity — without resorting to lorem ipsum.</p>
+
+<hr />
+
+<h2 id="-sample-code-snippet">🔧 Sample Code Snippet</h2>
+
+<p>Here’s a simple Python function using syntax highlighting:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">. Welcome to Artisanal Intelligence.</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">greet</span><span class="p">(</span><span class="sh">"</span><span class="s">crankbird</span><span class="sh">"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>]]></content><author><name>crankbird</name></author><category term="Tech" /><category term="Tutorials" /><category term="example" /><category term="test" /><category term="rich-content" /><summary type="html"><![CDATA[This is a sample post to test the enhanced layout with rich metadata and content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/sample.png" /><media:content medium="image" url="http://localhost:4000/assets/images/sample.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
