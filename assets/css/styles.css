@@ -82,12 +82,55 @@ h6 {
     margin-bottom: calc(var(--spacing-unit) * 1.5);
     font-size: var(--font-size-large);
 }
+/* Sticky Header Styles */
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--header-bg, #ffffffcc);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid var(--header-border, #ccc);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
 
 .site-header h1 {
     font-size: 2.25rem; /* or use a variable like var(--font-size-xlarge) if defined */
     margin: 0; /* optional: override inherited margins */
     line-height: 1.2; /* optional: tighter spacing */
-  }
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  max-width: 100%;
+}
+
+.site-title a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-title img {
+  height: 3em;
+  flex-shrink: 0;
+}
+
+.site-title-text {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  max-width: 15ch; /* controls wrap width */
+  word-break: break-word;
+}
+
+  
 
 p {
     margin-bottom: calc(var(--spacing-unit) * 1.5);
@@ -222,18 +265,7 @@ img {
     color: #ffffff;
 }
 
-/* Sticky Header Styles */
-.site-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--header-bg, #ffffffcc);
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid var(--header-border, #ccc);
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
+
 
   
 
