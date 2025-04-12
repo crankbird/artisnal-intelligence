@@ -12,7 +12,11 @@
   <header class="site-header">
     <div class="blog-title-container">
       <h1 class="blog-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" 
+          alt="Site Logo" style="height: 3em; vertical-align: middle; margin-right: 0.5em;">
+          {{ site.title }}
+        </a>
       </h1>
     </div>
     <nav>
