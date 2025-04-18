@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "yzhang.markdown-all-in-one", // Table of contents, formatting helpers
+        "davidanson.vscode-markdownlint", // Style checks, customizable to ignore Liquid
+        "sissel.shopify-liquid", // Liquid syntax highlighting
+        "redhat.vscode-yaml", // Good for _config.yml and frontmatter
+        "ecmel.vscode-html-css" // Helpful for inline HTML in markdown
+    ]
+}

@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+gem "bigdecimal"
+
 # gem "rails"
 gem "jekyll"
 gem "jekyll-feed"

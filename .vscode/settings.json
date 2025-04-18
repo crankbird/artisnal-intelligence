@@ -1,0 +1,35 @@
+{
+    // Enable format on save globally
+    "editor.formatOnSave": true,
+    // But disable it where it causes problems
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "[yaml]": {
+        "editor.formatOnSave": false
+    },
+    // Use our markdownlint config file
+    "markdownlint.config": {
+        "MD013": {
+            "line_length": 120
+        },
+        "MD033": false,
+        "MD041": false,
+        "MD026": false,
+        "MD007": {
+            "indent": 2
+        },
+        "MD014": false,
+        "MD003": {
+            "style": "atx"
+        },
+        "MD002": false
+    },
+    // Prevent Prettier (if installed) from touching Liquid templates
+    "prettier.disableLanguages": [
+        "markdown",
+        "html"
+    ],
+    // Optional: treat all *.md as UTF-8 for emoji/char consistency
+    "files.encoding": "utf8"
+}
