@@ -15,6 +15,13 @@ title: Design Philosophy
 
 ## Security
 
-From an authoring perspective, I rely on what GitHub provides out of the box. Within that, I operate with a minimal but deliberate trust model — keys are scoped, labeled, and revocable. In the enterprise world — such as at NetApp or on GitHub Enterprise — where the stakes and blast radius are exponentially larger, I strongly advocate for controls like Multi-Admin Verification (MAV).
+From an authoring perspective, I rely on what GitHub provides out of the box.
+Within that, I operate with a minimal but deliberate trust model — keys are
+scoped, labeled, and revocable. In the enterprise world — such as at NetApp or
+on GitHub Enterprise — where the stakes and blast radius are exponentially
+larger, I strongly advocate for controls like Multi-Admin Verification (MAV).
 
-From an end-user security perspective, I aim to minimize the attack surface by using a read-only static blog platform (Jekyll) with an absolute minimum of JavaScript. Text decoration is handled via CSS, and state is kept to a bare minimum. There are no tracking cookies, analytics beacons, or third-party search engine widgets.
+From an end-user security perspective, I aim to minimize the attack surface by using a read-only static blog platform
+(Jekyll) with an absolute minimum of JavaScript. Text decoration is handled via CSS, and state is kept to a bare minimum.
+
+There are no tracking cookies, analytics beacons, or third-party search engine widgets.
