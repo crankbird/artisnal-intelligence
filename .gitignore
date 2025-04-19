@@ -1,2 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Jekyll build artifacts
 _site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby dependency lock (can cause cross-platform pain)
 Gemfile.lock
+
+# Ignore all of .vscode, except the shared config files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
